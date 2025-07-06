@@ -49,5 +49,5 @@ def recognize_digit_with_pretrained(image_path):
         reader = easyocr.Reader(['en'])
         result = reader.readtext(image_path, allowlist='0123456789', detail=0)
         return result[0] if result else "عددی تشخیص داده نشد"
-image_path = 'Untitled_3.png'
+image_path = 'your_image.png'
 print(f"عدد تشخیص داده شده: {recognize_digit_with_pretrained(image_path)}")
